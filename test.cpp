@@ -1,30 +1,26 @@
-struct VecYYY
+struct Ok
 {
     int x;
 };
 
-VecYYY TestYYY();
-
-VecYYY TestYYY()
+Ok TestOk()
 {
-    VecYYY r;
+    Ok r;
     r.x = 1;
     return r;
 }
 
 ////////////////////////////
 
-struct VecXXX
+struct Err
 {
-    VecXXX() {}
+    Err() {} // <--- Difference here!!!
     int x;
 };
 
-VecXXX TestXXX();
-
-VecXXX TestXXX()
+Err TestErr()
 {
-    VecXXX r;
+    Err r;
     r.x = 1;
     return r;
 }
